@@ -1,0 +1,22 @@
+.color-fondo{
+    background-color: white;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optionally, set the height to occupy the full viewport height */
+}
+
+.center-content {
+    text-align: center;
+}
+
+.imgInicio {
+    height: 300px;
+    width: 300px; 
+}
+
+.botonP{
+    margin-bottom: 30px;
+}

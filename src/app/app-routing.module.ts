@@ -8,8 +8,24 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'landing',
     pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./Pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./Pages/signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'landing',
+    loadChildren: () => import('./Pages/landing/landing.module').then( m => m.LandingPageModule)
+  },
+  {
+    path: 'password-reset',
+    loadChildren: () => import('./Pages/password-reset/password-reset.module').then( m => m.PasswordResetPageModule)
   },
 ];
 
