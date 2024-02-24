@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Optionally, set the height to occupy the full viewport height */
+    /* margin-top: 50%; */
 }
 
 .center-content {
@@ -19,4 +20,9 @@
 
 .botonP{
     margin-bottom: 30px;
+}
+
+.titulo{
+    margin-top: 15px;
+    font-size: 25px;
 }

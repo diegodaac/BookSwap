@@ -1,13 +1,43 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">login</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="login-content">
+    <div class="login-header">
+      <ion-title class="tituloPrincipal">Bienvenido!</ion-title>
+      <ion-img src="assets/logo-bookswap-login.png" class="img-login"></ion-img>
+      <p class="subtitulo">Inicia sesión para ingresar a tu cuenta</p>
+    </div>
+
+    <!-- Formulario Login -->
+    <form class="login-form">
+      <div class="ion-padding">
+        <!-- Sección Correo/Usuario -->
+        <ion-item class="login-input">
+          <ion-input placeholder="Correo" class="input"></ion-input>
+          <ion-icon name="person-outline"></ion-icon>
+        </ion-item>
+
+        <!-- Sección Password  -->
+        <ion-item class="login-input">
+          <ion-input type="password" placeholder="Contraseña" class="input"></ion-input>
+          <ion-icon name="lock-closed-outline"></ion-icon>
+        </ion-item>
+
+        <!-- Sección Olvidar Password -->
+        <div class="olvidarPassword">
+          <a [routerLink]="['/password-reset']">¿Olvidaste tu contraseña?</a>
+        </div>
+      </div>
+
+      <!-- Sección Registrar -->
+      <div class="registro-section">
+        <p>¿Nuevo Miembro? <a [routerLink]="['/signup']">Regístrate Ahora</a></p>
+      </div>
+
+      <!-- Sección Botón -->
+      <ion-fab vertical="bottom" horizontal="end" class="botonP">
+        <ion-fab-button [routerLink]="['/home']">
+          <ion-icon name="chevron-forward"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </form>
+  </div>
 </ion-content>
